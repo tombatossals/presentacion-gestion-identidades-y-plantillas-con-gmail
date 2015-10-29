@@ -5,10 +5,6 @@ import {
   Heading, Image, Layout, Link, ListItem, List, Quote, Slide, Text
 } from "../src/spectacle";
 
-import preloader from "../src/utils/preloader";
-
-import Interactive from "./interactive";
-
 const images = {
     city: require("./city.jpg"),
     kat: require("./kat.png"),
@@ -18,8 +14,6 @@ const images = {
     identity01: require("./images/identity01.png"),
     templates01: require("./images/templates01.png")
 };
-
-preloader([images.city, images.kat]);
 
 export default class extends React.Component {
   render() {
@@ -70,6 +64,14 @@ export default class extends React.Component {
             <Text textColor="grey">Pulsa la flecha &rarr;  para continuar...</Text>
         </Slide>
 
+        <Slide transition={["slide"]} bgColor="white">
+            <Heading size={2} caps fit textColor="black">
+                Ejemplo de funcionamiento
+            </Heading>
+
+            <Text textSize="2em" padding="1em" bgColor="#EFEFEF">Vamos a hacer una demostración, enviadme 3 o 4 de vosotros/as un correo a la dirección de correo <Link href="mailto:curs-gmail@uji.es">curs-gmail@uji.es</Link> que véis más abajo preguntando por "el estado de vuestra solicitud de admisión al curso".</Text>
+        </Slide>
+
         <Slide transition={["zoom", "fade"]} bgColor="primary">
           <Heading caps fit>Flexible Layouts</Heading>
           <Layout>
@@ -84,12 +86,6 @@ export default class extends React.Component {
               </Heading>
             </Fill>
           </Layout>
-        </Slide>
-        <Slide transition={["slide"]} bgColor="black">
-          <BlockQuote>
-            <Quote>Wonderfully formatted quotes</Quote>
-            <Cite>Ken Wheeler</Cite>
-          </BlockQuote>
         </Slide>
         <Slide transition={["slide", "spin"]} bgColor="primary">
           <Heading caps fit size={1} textColor="tertiary">
@@ -113,7 +109,6 @@ export default class extends React.Component {
           <Heading size={1} caps fit textColor="tertiary">
             Your presentations are interactive
           </Heading>
-          <Interactive/>
         </Slide>
         <Slide transition={["spin", "slide"]} bgColor="tertiary">
           <Heading size={1} caps fit lineHeight={1.5} textColor="primary">
