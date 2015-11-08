@@ -34,7 +34,7 @@ export default class extends React.Component {
           </Heading>
           <Heading size={1} fit caps textColor="black">
           </Heading>
-          <Image src={images.gmail_logo} width="128px" height="128px" />
+          <Image src={images.gmail_logo.replace("/", "")} width="128px" height="128px" />
           <Text textSize="2em" textColor="black">David Rubert (david.rubert@uji.es)</Text>
           <Text textSize="1.5em" margin="20px 0px 0px" bold>Pulsa la flecha &rarr;  para continuar...</Text>
         </Slide>
@@ -76,7 +76,7 @@ export default class extends React.Component {
             </Heading>
 
             <Text textSize="2em" padding="1em" bgColor="#7ABF85">Vamos a hacer una demostración, enviadme 3 o 4 de vosotros/as un correo a la dirección de correo que véis más abajo preguntando por "el estado de vuestra solicitud de admisión al curso".</Text>
-            <Text><Link href="mailto:curs-gmail@uji.es">curs-gmail@uji.es</Link></Text>
+            <Text><Link href="mailto:david.rubert@uji.es">david.rubert@uji.es</Link></Text>
         </Slide>
 
         <Slide transition={["slide"]} bgColor="red">
@@ -169,6 +169,37 @@ export default class extends React.Component {
 
         <Slide transition={["slide"]} bgImage={images.templates02.replace("/", "")} bgDarken={0.1}>
             <Text margin="12em 0 0 0" textColor="grey">Pulsa la flecha &rarr;  para continuar...</Text>
+        </Slide>
+
+        <Slide transition={["slide", "spin"]}>
+            <Heading size={2} caps fit textColor="tertiary">
+                Creación de una plantilla
+            </Heading>
+
+            <Text textSize="2em">Redacta el siguiente texto en un nuevo correo, pero no lo envíes:</Text>
+            <Text padding=".5em" bgColor="#F4CD1C">La teva preinscripció al curs de Formació del PAS: "Curs d'anglès B1.2 Intermediate" ha estat autoritzada pel teu cap de servei o director/a de departament.
+Prèviament al inici del curs rebràs un mail informant-te sobre la teva admissió o no al curs.</Text>
+            <Text>Finalmente, guárdalo como plantilla</Text>
+        </Slide>
+
+        <Slide transition={["slide", "spin"]} bgColor="#DB2464">
+            <Heading size={2} caps fit textColor="black">
+                Respuesta con plantilla
+            </Heading>
+
+            <Text padding="1em" textColor="white" bgColor="#A31A48">Os voy a enviar un correo al álias curs-gmail@uji.es, respóndeme con la plantilla que hemos creado previamente.</Text>
+            <Text>Esta vez, envíalo y veremos como recibo las respuestas</Text>
+
+        </Slide>
+
+        <Slide transition={["slide", "spin"]} bgColor="#49AEC0">
+            <Heading size={2} caps fit textColor="black">
+                Borrado de plantillas
+            </Heading>
+
+            <Text padding="1em" textColor="white" bgColor="#131723">Finalmente, vamos a borrar la plantilla que habíamos creado ya que no la vamos a necesitar más.</Text>
+            <Text>Fácil, ¿no?</Text>
+
         </Slide>
 
       </Deck>
