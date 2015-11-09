@@ -9,15 +9,9 @@ const images = {
     gmail_logo: require("./images/gmail-logo.png"),
     batman: require("./images/batman.jpg"),
     bruce: require("./images/bruce.jpg"),
-    swissarmy: require("./images/swissarmy.jpg"),
     identity01: require("./images/identity01.png"),
-    labs: require("./images/labs.png"),
-    labs01: require("./images/labs01.png"),
-    labs02: require("./images/labs02.png"),
-    labs03: require("./images/labs03.png"),
-    templatesLogo: require("./images/templates-logo.jpg"),
-    templates01: require("./images/templates01.png"),
-    templates02: require("./images/templates02.png")
+    signature01: require("./images/signature01.png"),
+    config01: require("./images/config01.png"),
 };
 
 export default class extends React.Component {
@@ -79,7 +73,42 @@ export default class extends React.Component {
             <Text textSize="2em">Os he añadido a todos/as al siguiente alias temporal <Link href="mailto:curs-gmail@uji.es">curs-gmail@uji.es</Link></Text>
         </Slide>
 
-        <Slide transition={["slide"]} bgImage={images.labs01.replace("/", "")} bgDarken={0.1} bgColor="white">
+        <Slide transition={["slide"]} bgImage={images.config01.replace("/", "")} bgDarken={0.1} bgColor="white">
+            <Text margin="12em 0 0 0" cap fit textColor="brown">Pulsa la flecha &rarr;  para continuar...</Text>
+        </Slide>
+
+        <Slide transition={["slide"]} bgImage={images.identity01.replace("/", "")} bgDarken={0.1} bgColor="white">
+            <Text margin="12em 0 0 0" cap fit textColor="brown">Pulsa la flecha &rarr;  para continuar...</Text>
+        </Slide>
+
+        <Slide transition={["slide", "spin"]} bgColor="#AF806E">
+            <Heading size={2} caps fit textColor="tertiary">
+                Identidades
+            </Heading>
+
+            <List textColor="yellow" bgColor="#AF806E" padding="1em" margin="0">
+              <ListItem>Accede a la configuración de cuentas.</ListItem>
+              <ListItem>Comprueba qué identidades tienes configuradas.</ListItem>
+              <ListItem>Establece como predeterminada la dirección que prefieras.</ListItem>
+              <ListItem>Elimina aquellas identidades que ya no necesites</ListItem>
+            </List>
+            <Text>No tengas miedo en probar, ya que cualquier fallo que cometamos puede solucionarse.</Text>
+        </Slide>
+
+        <Slide transition={["slide", "spin"]} bgColor="#C7A0AC">
+            <Heading size={2} caps fit textColor="tertiary">
+                Firmas
+            </Heading>
+
+            <Text>Cada identidad puede tener una firma diferente.</Text>
+            <List textColor="yellow" bgColor="#918FAC" padding="1em" margin="0">
+              <ListItem>Accede a la configuración general.</ListItem>
+              <ListItem>Comprueba qué firmas tienes definidas.</ListItem>
+              <ListItem>Cambia la firma de tu nueva identidad, curs-gmail@uji.es.</ListItem>
+            </List>
+        </Slide>
+
+        <Slide transition={["slide"]} bgImage={images.signature01.replace("/", "")} bgDarken={0.1} bgColor="white">
             <Text margin="12em 0 0 0" cap fit textColor="brown">Pulsa la flecha &rarr;  para continuar...</Text>
         </Slide>
 
