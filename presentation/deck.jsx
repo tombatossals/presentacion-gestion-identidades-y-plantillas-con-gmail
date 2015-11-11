@@ -142,6 +142,24 @@ export default class extends React.Component {
             <Text margin="12em 0 0 0" cap fit textColor="brown">Pulsa la flecha &rarr;  para continuar...</Text>
         </Slide>
 
+        <Slide transition={["slide", "spin"]} bgColor="#C7A0AC">
+            <Heading size={2} caps fit textColor="tertiary">
+                Ejercicio
+            </Heading>
+
+            <Text>Crea una firma para una de tus identidades si no la tienes ya creada. Toma como ejemplo la de la captura de pantalla de la transparencia anterior.
+            </Text>
+        </Slide>
+
+        <Slide transition={["slide", "spin"]} bgColor="#FCCA14">
+            <Heading size={2} caps fit textColor="tertiary">
+                Más ejercicios
+            </Heading>
+
+            <Text>Os voy a enviar un correo al que me gustaría que intentárais contestar con una plantilla, una identidad diferente (curs-gmail@uji.es) y una firma.
+            </Text>
+        </Slide>
+
         <Slide transition={["slide", "spin"]} bgColor="#8CC7DB">
             <Heading size={2} caps fit textColor="tertiary">
                 Respuesta automática
