@@ -11,6 +11,7 @@ const images = {
     bruce: require("./images/bruce.jpg"),
     identity01: require("./images/identity01.png"),
     signature01: require("./images/signature01.png"),
+    automatic01: require("./images/automatic01.png"),
     config01: require("./images/config01.png"),
 };
 
@@ -109,6 +110,23 @@ export default class extends React.Component {
         </Slide>
 
         <Slide transition={["slide"]} bgImage={images.signature01.replace("/", "")} bgDarken={0.1} bgColor="white">
+            <Text margin="12em 0 0 0" cap fit textColor="brown">Pulsa la flecha &rarr;  para continuar...</Text>
+        </Slide>
+
+        <Slide transition={["slide", "spin"]} bgColor="#8CC7DB">
+            <Heading size={2} caps fit textColor="tertiary">
+                Respuesta automática
+            </Heading>
+
+            <Text>Nos permite configurar una respuesta automática cuando vayamos a estar desconectados una temporada.</Text>
+            <List bgColor="#AAEDE9" padding="1em" margin="0">
+              <ListItem>Accede a la configuración general, la última sección.</ListItem>
+              <ListItem>Definimos un período y un mensaje.</ListItem>
+              <ListItem>GMail se encarga de gestionar las respuestas.</ListItem>
+            </List>
+        </Slide>
+
+        <Slide transition={["slide"]} bgImage={images.automatic01.replace("/", "")} bgDarken={0.1} bgColor="white">
             <Text margin="12em 0 0 0" cap fit textColor="brown">Pulsa la flecha &rarr;  para continuar...</Text>
         </Slide>
 
